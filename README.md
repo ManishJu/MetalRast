@@ -1,3 +1,5 @@
+<img width="1920" height="1129" alt="1" src="https://github.com/user-attachments/assets/7bd89ebf-c8cb-46e6-ad2c-eedcf3254134" />
+
 # MetalRast
 
 A Metal-compute software rasterizer for Apple Silicon, ported from the CUDA
