@@ -67,3 +67,47 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+
+# Build artifacts
+build/
+*.o
+*.air
+*.metallib
+
+# Resources folder is excluded entirely (large binary assets + reference repo)
+Resources/
+
+# Generated images
+temp_images/
+
+# macOS — folder metadata + resource forks (._foo created on FAT/exFAT shares)
+.DS_Store
+._*
+.AppleDouble
+.LSOverride
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Misc scratch
+/tmp/
+
+# ImGui runtime-saved panel layout
+imgui.ini
+
+# Claude Code local state
+.claude/
+
+# Public-share staging directory (snapshot of HEAD with a fresh README).
+# Built by hand with git archive; not part of the repo's history.
+To Post/
+
+# Texture encode cache (basisu ktx2 keyed by content hash). Per-clone,
+# can grow to hundreds of MiB on textured scenes; do not check in. Folder
+# itself is tracked (via model_cache/.gitignore) so the path exists on
+# fresh clones; only the contents are ignored.
+model_cache/*
+!model_cache/.gitignore
+
